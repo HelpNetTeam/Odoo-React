@@ -19,7 +19,7 @@ Please refer to the Odoo [API documentation](https://www.odoo.com/documentation/
 **Creating Odoo connection instance**
 Before executing any kind of query operations, a connection instance must be established either with a username/password or with a previously retrieved session id.
 ```js
-import Odoo from 'react-odoo'
+import Odoo from 'odoo-react'
 const odoo = new Odoo({
   host: 'YOUR_SERVER_ADDRESS',
   port: 8069, /* Defaults to 80 if not specified */

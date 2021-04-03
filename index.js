@@ -22,8 +22,7 @@ Odoo.prototype.authenticate = function (cb) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Accept: "application/json",
-      "Content-Length": body.length,
+      Accept: "application/json"
     },
     data: body,
     withCredentials: false,
@@ -32,7 +31,6 @@ Odoo.prototype.authenticate = function (cb) {
   };
   axios(requestConfig).then(
     (response) => {
-      console.log(response);
       if (response.data.error) {
         this.context = response.data.result.user_context;
         cb(response.data.error, null);
