@@ -1,6 +1,6 @@
 {
   "name": "odoo-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Odoo React",
   "main": "index.js",
   "scripts": {
